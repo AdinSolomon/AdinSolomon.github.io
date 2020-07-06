@@ -1,0 +1,25 @@
+/*
+    I really like this Mint Green color: rgba(105, 230, 191, 1)
+*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+html {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Main_Navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Main_Navigation li {
+    display: inline-block;
+}
+
+.Header hr {
+    background-color: rgba(105, 230, 191, 1);
+}
