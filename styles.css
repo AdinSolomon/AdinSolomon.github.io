@@ -12,11 +12,34 @@ html {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.Header {
+    height: 80px;
+}
+
+.Header nav {
+    right: 0px;
+    float: right;
+}
+
+.Main_Navigation ul{
+    margin: 0px;
+    padding: 0px;
+    right: 0px;
+}
+
+.Main_Navigation li {
+    display: inline-block;
+}
+
+.Main_Navigation a {
+    text-decoration: none;
+}
+
 .Main_Navigation a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.Main_Navigation li {
+.Header img, nav {
     display: inline-block;
 }
 
