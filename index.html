@@ -10,9 +10,9 @@
     <img src="Images/icon.png" width=80p hieght=80p>
     <nav class="Main_Navigation">
         <ul>
-            <li><a href="index.html">About Me</a></li>
+            <li><a href="#About Me">About Me</a></li>
             <li>|</li>
-            <li><a href="index.html">Projects</a></li>
+            <li><a href="#Projects">Projects</a></li>
             <li>|</li>
             <li><a href="experience.html">Experience</a></li>
             <li>|</li>
@@ -24,25 +24,27 @@
     <hr>
 </header>
 <body>
-    <div class="Introduction">
+    <div class="Introduction" id="Introduction">
         <h1>I'm Adin - I like to tinker.</h1>
         <p>
             There is little more exciting than a challenge. Whether that's starting a project or diving deep into a topic of interest only depends on the day.
         </p>
-        <a href="mailto:adinbsolomon@gmail.com"><button>Get in Touch</button></a>
+        <a href="mailto:adinbsolomon@gmail.com" target="_blank"><button>Get in Touch</button></a>
     </div>
-    <section class="About_Me">
+    <div class="About_Me" id="About Me">
         <h2>About Me</h2>
-        <p>
-            Hey there! I'm Adin, a Computer Science student at Drexel University.
-        </p>
-        <p>
-            I love to learn and apply what I've learned through projects and other media. 
-            In classes, I maximize my opportunities for growth by tackling big projects, and I work hard to find elegant and efficient solutions.
-        </p>
-        <img src="Images/headshot.JPG", width=300p>
-    </section>
-    <section class="Projects">
+        <section>
+            <span><p>
+                Hey there! I'm Adin, a Computer Science student at Drexel University.
+            </p>
+            <p>
+                I love to learn and apply what I've learned through projects and other media. 
+                In classes, I maximize my opportunities for growth by tackling big projects, and I work hard to find elegant and efficient solutions.
+            </p></span>
+            <span><img src="Images/headshot.JPG", width=300p></span>
+        </section>
+    </div>
+    <div class="Projects" id="Projects">
         <h2>My Projects</h2>
         <table>
             <thead>
@@ -110,10 +112,10 @@
                 </tr>
             </tbody>
         </table>
-    </section>
-    <section class="Contact_Information">
+    </div>
+    <div class="Contact_Information" id="Contact_Information">
         
-    </section>
+    </div>
 </body>
 <footer>
     Project Link Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
