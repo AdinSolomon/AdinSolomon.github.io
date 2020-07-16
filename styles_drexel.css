@@ -1,11 +1,7 @@
-/*
-    I really like this Mint Green color: rgba(105, 230, 191, 1)
-*/
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
-
 
 html {
     background-color: rgba(0, 0, 0, 0.22);
@@ -49,21 +45,4 @@ html {
 
 .Header img, nav {
     display: inline-block;
-}
-
-.Introduction p {
-    max-width: 500px;
-}
-
-.About_Me section {
-    display: flex;
-    align-items: stretch;
-}
-
-.About_Me p {
-    max-width: 500px;
-}
-
-.About_Me img {
-    float: right;
 }
