@@ -4,34 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adin Solomon | Computer Scientist</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <header class="Header">   
-        <a href="index.html"><img src="Images/icon.png"></a>
-        <nav class="Main_Navigation">
-            <ul>
-                <li><a href="index.html#About_Me">About Me</a></li>
-                <li><a href="index.html#Projects">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="drexel.html">Drexel</a></li>
-                <li><a href="Documents/Resume.pdf" target="_blank">My Résumé</a></li>
-            </ul>
-        </nav>
-        <hr>
+    <header id="Header">
+        <table> <tr>
+            <td id="logo">
+                <a href="index.html">
+                    <img src="Images/logo.png">
+                </a>
+            </td>
+            <td id="navigation">
+                <nav>
+                    <span>
+                        <a href="index.html#About_Me">About Me</a>
+                    </span>
+                    <span>
+                        <a href="index.html#Projects">Projects</a>
+                    </span>
+                    <span>
+                        <a href="experience.html">Experience</a>
+                    </span>
+                    <span>
+                        <a href="drexel.html">Drexel</a>
+                    </span>
+                    <span>
+                        <a href="Documents/Resume.pdf" target="_blank">My Résumé</a>
+                    </span>
+                </nav>
+            </td>
+        </tr> </table>
     </header>
-    <div class="Introduction" id="Introduction">
-        <h1>I'm Adin - I like to tinker.</h1>
-        <p>
-            There is little more exciting than a challenge. Whether that's starting a project or diving deep into a topic of interest only depends on the day.
-        </p>
-        <a href="mailto:adinbsolomon@gmail.com" target="_blank"><button>Get in Touch</button></a>
+    <div class="column" id="margin-left">
+        <!-- This is just to space nicely -->
     </div>
-    <hr>
-    <div class="About_Me" id="About_Me">
-        <h2>About Me</h2>
-        <section>
-            <span>
+    <div class="column" id="center">
+        <div class="section" id="Introduction">
+            <p id="name">   I'm Adin - </p>
+            <p id="slogan"> I like to explore. </p>
+            <p id="blurb">
+                There is little more exciting than a challenge. 
+                Whether that's starting a project or diving deep into a topic of interest only depends on the day.
+            </p>
+            <div id="email-button-box">
+                <a id="contact" href="mailto:adinbsolomon@gmail.com" target="_blank">
+                    <button id="email-button">Get in Touch</button>
+                </a>  
+            </div>
+            <!-- <hr id="separator001"> -->
+        </div>
+        <div class="section" id="About_Me">
+            <span id="left">
+                <img src="Images/headshot.JPG">
+            </span>
+            <span id="right">
+                <p id="section-title">
+                    About Me
+                </p>
                 <p>
                     Hey there! I'm Adin, a Computer Science student at Drexel University.
                 </p>
@@ -40,83 +69,98 @@
                     In classes, I maximize my opportunities for growth by tackling big projects, 
                     and I work hard to find elegant and efficient solutions.
                 </p>
+                <p>
+                    I found my interest in computer science as a freshman in high school when a close friend of mine
+                    was teaching me the material he learned in his AP Computer Science class. While I had always been math-oriented
+                    and algorithmically-inclined, I hadn't encountered programming just yet - and I was in for a treat! After 
+                    continuing to learn Java with my friend, I found my way into a data analysis position at the Children's 
+                    Hospital of Phildelphia. I had the opportunity to learn MatLab in a professional research setting, and 
+                    the scope and scale of the impact of programming began to set in. I was hooked, and haven't looked back since!
+                </p>
+                <p>
+                    I have many blessings in my life - chiefly among them are my family, my friends, and my communities.
+                </p>
             </span>
-            <img src="Images/headshot.JPG" width=300p>
-        </section>
-    </div>
-    <hr>
-    <div class="Projects" id="Projects">
-        <h2>My Projects</h2>
-        <table>
-            <thead>
-                <tr>
+        </div>
+        <div class="section" id="Projects">
+            <p>My Projects</p>
+            <table>
+                <thead>
                     <th>Project Year</th>
                     <th>Project Name</th>
-                    <th>Tools Used</th>
-                    <th>Links</th>
-                    <!-- Link icons are found at https://icons8.com/icon/set/file/wired -->
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="Project">
-                    <td class="Year">2020</td>
-                    <td class="Name">This Website</td>
-                    <td class="Tools">HTML/CSS/JS</td>
-                    <td class="Links">
-                        <span>
-                            <a href="https://github.com/AdinSolomon/AdinSolomon.github.io" target="_blank">
-                                <img src="Images/Icons/icons8-merge-git.png">
-                            </a>
-                        </span>
-                    </td>
-                </tr>
-                <tr class="Project">
-                    <td class="Year">2020</td>
-                    <td class="Name">Quantum Computing</td>
-                    <td class="Tools">Experimental Course Material</td>
-                    <td class="Links">
-                        <span>
-                            <a href="https://github.com/AdinSolomon/QuantumComputing" target="_blank">
-                                <img src="Images/Icons/icons8-graded-paper.png">
-                            </a>
-                        </span>
-                    </td>
-                </tr>
-                <tr class="Project">
-                    <td class="Year">2019</td>
-                    <td class="Name">General Purpose GPU Programming</td>
-                    <td class="Tools">CUDA Documentation</td>
-                    <td class="Links">
-                        <span>
-                            <a href="https://docs.google.com/document/d/1rCt0uPcCkGu_MQCTLaX1iZ1PKiv1BiG0BYMMfrDPewg/edit?usp=sharing" target="_blank">
-                                <img src="Images/Icons/icons8-long-paper.png">
-                            </a>
-                        </span>
-                    </td>
-                </tr>
-                <tr class="Project">
-                    <td class="Year">2019</td>
-                    <td class="Name">Big Bots</td>
-                    <td class="Tools">Unity3D, SteamVR</td>
-                    <td class="Links">
-                        <span>
-                            <a href="https://drive.google.com/file/d/1IoPEGahlgf1Fp-4G00tjaGABpd7f7KUv/view?usp=sharing" target="_blank">
-                                <img src="Images/Icons/icons8-video-file.png">
-                            </a>
-                        </span>
-                        <span>
-                            <a href="https://docs.google.com/document/d/1kTnwvkuOmmQ0y9wJ9o_6v2TDtp1LGGCfD94ipMWRHlc/edit?usp=sharing" target="_blank">
-                                <img src="Images/Icons/icons8-graded-paper.png">
-                            </a>
-                        </span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="Contact_Information" id="Contact_Information">
+                    <th>Tools Used  </th>
+                    <th>Links       </th> <!-- Link icons are found at https://icons8.com/icon/set/file/wired --> 
+                </thead>
+                <tbody>
+                    <tr class="Project">
+                        <td class="Year">2020</td>
+                        <td class="Name">This Website</td>
+                        <td class="Tools">HTML/CSS/JS</td>
+                        <td class="Links">
+                            <span>
+                                <a href="https://github.com/AdinSolomon/AdinSolomon.github.io" target="_blank">
+                                    <img src="Images/Icons/icons8-merge-git.png">
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="Project">
+                        <td class="Year">2020</td>
+                        <td class="Name">Quantum Computing</td>
+                        <td class="Tools">Experimental Course Material</td>
+                        <td class="Links">
+                            <span>
+                                <a href="https://github.com/AdinSolomon/QuantumComputing" target="_blank">
+                                    <img src="Images/Icons/icons8-graded-paper.png">
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="Project">
+                        <td class="Year">2019</td>
+                        <td class="Name">General Purpose GPU Programming</td>
+                        <td class="Tools">CUDA Documentation</td>
+                        <td class="Links">
+                            <span>
+                                <a href="https://docs.google.com/document/d/1rCt0uPcCkGu_MQCTLaX1iZ1PKiv1BiG0BYMMfrDPewg/edit?usp=sharing" target="_blank">
+                                    <img src="Images/Icons/icons8-long-paper.png">
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="Project">
+                        <td class="Year">2019</td>
+                        <td class="Name">Big Bots</td>
+                        <td class="Tools">Unity3D, SteamVR</td>
+                        <td class="Links">
+                            <span>
+                                <a href="https://drive.google.com/file/d/1IoPEGahlgf1Fp-4G00tjaGABpd7f7KUv/view?usp=sharing" target="_blank">
+                                    <img src="Images/Icons/icons8-video-file.png">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://docs.google.com/document/d/1kTnwvkuOmmQ0y9wJ9o_6v2TDtp1LGGCfD94ipMWRHlc/edit?usp=sharing" target="_blank">
+                                    <img src="Images/Icons/icons8-graded-paper.png">
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Contact_Information">
+            
+        </div>
         
     </div>
+    
+    <div class="column" id="margin-right">
+        <!-- This is just to space nicely -->
+    </div>
+    
+    
+    
+    
 </body>
 <footer>
     Project Link Icons by <a target="_blank" href="https://icons8.com">Icons8</a>

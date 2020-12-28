@@ -1,0 +1,99 @@
+
+/****************************/
+/*          Global          */
+/****************************/
+
+:root {
+    --navy01:           #020c1b;
+    --navy02:           #0a192f;
+    --navy03:           #172a45;
+    --navy04:           #303C55;
+    --navy-shadow:      rgba(2, 12, 27, 0.7);
+    --slate01:          #8892b0;
+    --slate02:          #a8b2d1;
+    --slate03:          #ccd6f6;
+    --white:            #e6f1ff;
+    --green:            #64ffda;
+    --green-tint:       rgba(100, 255, 218, 0.1);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--slate03);
+}
+
+html {
+    background-color: var(--navy02);
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 650px;
+}
+
+/****************************/
+/*         Header           */
+/****************************/
+
+#Header table {
+    position: relative;
+    width: 100%;
+}
+
+#Header table tr {
+    margin: 0px;
+}
+
+#Header #logo {
+    position: relative;
+    float: left;
+    margin-right: 12px;
+}
+
+#Header #logo a {
+    float: left;
+    text-decoration: none;
+    padding: 0px;
+}
+
+#Header #logo img {
+    height: 80px;
+    width: 80px;
+    border: 1px solid var(--green);
+}
+
+#Header #navigation {
+    position: relative;
+    float: inline-end;
+    vertical-align: bottom;
+    right: 0%;
+    bottom: 4px;
+    
+}
+
+#Header #navigation nav {
+    float: right;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--green);
+}
+
+#Header #navigation nav span a {
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#Header #navigation nav span a:hover {
+    color: rgba(var(--green), 0.9);
+    background-color: var(--green-tint);
+}
+
+#separator001 {
+    margin: 0px;
+    margin-top: 50px;
+}
