@@ -24,15 +24,24 @@
 
 html {
     background-color: var(--navy02);
+    margin: 15px;
 }
 
 body {
-    box-sizing: border-box;
     padding: 0px;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    min-width: 650px;
+    margin: 0px;
+    min-width: 750px;
+}
+
+body #content {
+    margin: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+    body #content {
+        margin-left: 17%;
+        margin-right: 17%;
+    }
 }
 
 /****************************/
@@ -72,7 +81,6 @@ body {
     vertical-align: bottom;
     right: 0%;
     bottom: 4px;
-    
 }
 
 #Header #navigation nav {
@@ -102,19 +110,7 @@ body {
 /*          Body            */
 /****************************/
 
-.column {
-    display: inline-block;
-}
-
-.column#margin-left, .column#margin-right {
-    width: 17%;
-}
-
-.column#center {
-    width: 66%;
-}
-
-.column#center .section {
+body #content .section {
     position: relative;
     margin-bottom: 150px;
 }
@@ -123,11 +119,11 @@ body {
 /*       Introduction       */
 /****************************/
 
-.section#Introduction {
+#Introduction {
     max-width: 800px;
 }
 
-.section#Introduction #name {
+#Introduction #name {
     display: inline-block;
     margin-top: 150px;
     margin-right: 11px;
@@ -136,14 +132,14 @@ body {
     font-weight: bold;
 }
 
-.section#Introduction #slogan {
+#Introduction #slogan {
     display: inline-block;
     margin: 0px;
     font-size: 4em;
     font-weight: bold;
 }
 
-.section#Introduction #blurb {
+#Introduction #blurb {
     max-width: 800px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -153,11 +149,11 @@ body {
     color:var(--slate02);
 }
 
-.section#Introduction #email-button-box {
+#Introduction #email-button-box {
     height: 50px;
 }
 
-.section#Introduction #email-button {
+#Introduction #email-button {
     position: relative;
     float: right;
     padding: 10px;
@@ -168,7 +164,7 @@ body {
     border-style: solid
 }
 
-.section#Introduction #email-button:hover {
+#Introduction #email-button:hover {
     background-color: var(--green-tint);
 }
 
@@ -176,41 +172,41 @@ body {
 /*         About Me         */
 /****************************/
 
-.section#About_Me {
+#About_Me {
     max-width: 1000px;
     float: right;
 }
 
-.section#About_Me span {
+#About_Me span {
     display: inline-block;
 }
 
-.section#About_Me span#left {
+#About_Me span#left {
     position: relative;
     float: left;
     width: 30%;
 }
 
-.section#About_Me span#right {
+#About_Me span#right {
     position: relative;
     float: left;
     width: 70%;
 }
 
-.section#About_Me img {
+#About_Me img {
     position: relative;
     width: 90%;
     border-radius: 10px;
     border: 1px solid var(--green);
 }
 
-.section#About_Me #section-title {
+#About_Me #section-title {
     font-size: 2.5em;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.section#About_Me p {
+#About_Me p {
     font-size: 1.2em;
 }
 
@@ -218,35 +214,35 @@ body {
 /*         Projects         */
 /****************************/
 
-.section#Projects {
+#Projects {
     clear: both;
 }
 
-.section#Projects p {
+#Projects p {
     font-size: 2em;
     margin-bottom: 0px;
 }
 
-.section#Projects table {
+#Projects table {
     padding: 20px;
 }
 
-.section#Projects thead th {
+#Projects thead th {
     padding-bottom: 20px;
 }
 
-.section#Projects table tbody a {
+#Projects table tbody a {
     text-decoration: none;
 }
 
-.section#Projects table td.Links {
+#Projects table td.Links {
     text-align: center;
     padding: 5px;
     border-radius: 5px;
     margin-left: 100px;
 }
 
-.section#Projects table td.Links img {
+#Projects table td.Links img {
     padding: 5px;
     background-color: var(--green-tint);
     border: 1px solid var(--green);

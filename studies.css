@@ -34,6 +34,9 @@ body {
     margin-right: 15px;
     min-width: 650px;
 }
+img {
+    alt: "Oops! This image didn't display correctly."
+}
 
 /****************************/
 /*         Header           */
